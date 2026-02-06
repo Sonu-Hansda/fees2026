@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --animate-marquee: marquee 15s linear infinite;
+  --animate-marquee2: marquee2 15s linear infinite;
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes marquee2 {
+    0% {
+      transform: translateX(100%);
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  /* Energy-themed color palette - Professional Academic Theme */
+  /* Deep Royal Blue for Trust & Professionalism */
+  --color-energy-blue: #1B365D;
+  /* Deep Forest Teal for Sustainability */
+  --color-energy-green: #0F5132;
+  /* Muted Bronze/Ochre for Accents (Indian Academic Context) */
+  --color-energy-amber: #B45309;
+  /* Charcoal Gray for Text - Softer than black but highly readable */
+  --color-energy-gray: #1F2937;
+  /* Warm Off-White/Ivory background for reduced eye strain */
+  --color-energy-light: #F9FAFB;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  color: #374151;
+  background-color: #f8fafc;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e3a8a;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1e40af;
+}
+
+/* Smooth transitions */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+/* Standard section headings */
+.section-heading {
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+/* Geometric background patterns - Subtle Energy Grid */
+.geometric-pattern {
+  background-image:
+    linear-gradient(30deg, color-mix(in srgb, var(--color-energy-blue), transparent 95%) 12%, transparent 12.5%, transparent 87%, color-mix(in srgb, var(--color-energy-blue), transparent 95%) 87.5%, color-mix(in srgb, var(--color-energy-blue), transparent 95%)),
+    linear-gradient(150deg, color-mix(in srgb, var(--color-energy-blue), transparent 95%) 12%, transparent 12.5%, transparent 87%, color-mix(in srgb, var(--color-energy-blue), transparent 95%) 87.5%, color-mix(in srgb, var(--color-energy-blue), transparent 95%)),
+    linear-gradient(30deg, color-mix(in srgb, var(--color-energy-blue), transparent 95%) 12%, transparent 12.5%, transparent 87%, color-mix(in srgb, var(--color-energy-blue), transparent 95%) 87.5%, color-mix(in srgb, var(--color-energy-blue), transparent 95%)),
+    linear-gradient(150deg, color-mix(in srgb, var(--color-energy-blue), transparent 95%) 12%, transparent 12.5%, transparent 87%, color-mix(in srgb, var(--color-energy-blue), transparent 95%) 87.5%, color-mix(in srgb, var(--color-energy-blue), transparent 95%)),
+    linear-gradient(60deg, color-mix(in srgb, var(--color-energy-green), transparent 96%) 25%, transparent 25.5%, transparent 75%, color-mix(in srgb, var(--color-energy-green), transparent 96%) 75%, color-mix(in srgb, var(--color-energy-green), transparent 96%)),
+    linear-gradient(60deg, color-mix(in srgb, var(--color-energy-green), transparent 96%) 25%, transparent 25.5%, transparent 75%, color-mix(in srgb, var(--color-energy-green), transparent 96%) 75%, color-mix(in srgb, var(--color-energy-green), transparent 96%));
+  background-size: 80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+}
+
+/* Professional button styles */
+.btn-energy {
+  background: linear-gradient(135deg, var(--color-energy-blue) 0%, var(--color-energy-green) 100%);
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 0.375rem;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-energy:hover {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--color-energy-blue), black 10%) 0%, color-mix(in srgb, var(--color-energy-green), black 10%) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px color-mix(in srgb, var(--color-energy-blue), transparent 80%);
+}
+
+.btn-energy-outline {
+  background: transparent;
+  color: var(--color-energy-blue);
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 0.375rem;
+  transition: all 0.3s ease;
+  border: 2px solid var(--color-energy-blue);
+}
+
+.btn-energy-outline:hover {
+  background: var(--color-energy-blue);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Card styles for professional look */
+.energy-card {
+  background: white;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.energy-card:hover {
+  border-color: var(--color-energy-blue);
+  box-shadow: 0 10px 25px color-mix(in srgb, var(--color-energy-blue), transparent 90%);
+  transform: translateY(-5px);
+}
+
+/* Section divider with energy theme */
+.section-divider {
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-energy-blue) 0%, var(--color-energy-green) 50%, var(--color-energy-amber) 100%);
+  margin: 3rem 0;
+  border-radius: 2px;
+}
