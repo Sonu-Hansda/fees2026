@@ -3,9 +3,7 @@ function AboutConference() {
         <section className="py-10 sm:py-12 md:py-16 lg:py-20 bg-energy-light">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <div className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16">
-                    <h2 className="section-heading text-2xl sm:text-3xl md:text-4xl font-bold text-energy-gray mb-3 sm:mb-4">
-                        About FEES-2026
-                    </h2>
+                    <img src="/fees_logo.png" className="max-w-xs" alt="" />
                     <div className="section-divider max-w-2xl mx-auto"></div>
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-12 lg:gap-16 items-center">
