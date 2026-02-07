@@ -4,7 +4,7 @@ function Speakers() {
             name: "Dr. Robert Sharma",
             title: "Chief Engineer",
             company: "National Thermal Power Corporation",
-            image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=400&fit=crop",
+            image: "https://placehold.co/600x400",
             topic: "Advancements in Thermal Power Generation",
             experience: "35+ years in power sector"
         },
@@ -12,7 +12,7 @@ function Speakers() {
             name: "Dr. Robert Sharma",
             title: "Chief Engineer",
             company: "National Thermal Power Corporation",
-            image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=400&fit=crop",
+            image: "https://placehold.co/600x400",
             topic: "Advancements in Thermal Power Generation",
             experience: "35+ years in power sector"
         },
@@ -20,7 +20,7 @@ function Speakers() {
             name: "Dr. Robert Sharma",
             title: "Chief Engineer",
             company: "National Thermal Power Corporation",
-            image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=400&fit=crop",
+            image: "https://placehold.co/600x400",
             topic: "Advancements in Thermal Power Generation",
             experience: "35+ years in power sector"
         },
@@ -28,7 +28,7 @@ function Speakers() {
             name: "Dr. Robert Sharma",
             title: "Chief Engineer",
             company: "National Thermal Power Corporation",
-            image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=400&fit=crop",
+            image: "https://placehold.co/600x400",
             topic: "Advancements in Thermal Power Generation",
             experience: "35+ years in power sector"
         },
