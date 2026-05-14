@@ -1,31 +1,31 @@
 function Speakers() {
     const speakers = [
         {
-            name: "Dr. Robert Sharma",
+            name: "Dr. ABC Sharma",
             title: "Chief Engineer",
             company: "National Thermal Power Corporation",
             image: "https://placehold.co/600x400",
             topic: "Advancements in Thermal Power Generation",
             experience: "35+ years in power sector"
         },
-        {
-            name: "Dr. Robert Sharma",
+         {
+            name: "Dr. ABC Sharma",
             title: "Chief Engineer",
             company: "National Thermal Power Corporation",
             image: "https://placehold.co/600x400",
             topic: "Advancements in Thermal Power Generation",
             experience: "35+ years in power sector"
         },
-        {
-            name: "Dr. Robert Sharma",
+         {
+            name: "Dr. ABC Sharma",
             title: "Chief Engineer",
             company: "National Thermal Power Corporation",
             image: "https://placehold.co/600x400",
             topic: "Advancements in Thermal Power Generation",
             experience: "35+ years in power sector"
         },
-        {
-            name: "Dr. Robert Sharma",
+         {
+            name: "Dr. ABC Sharma",
             title: "Chief Engineer",
             company: "National Thermal Power Corporation",
             image: "https://placehold.co/600x400",
@@ -56,7 +56,7 @@ function Speakers() {
                                     alt={speaker.name}
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-energy-blue/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <div className="absolute inset-0 bg-linear-to-t from-energy-blue/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                 <div className="absolute bottom-2 left-2 right-2 sm:bottom-3 sm:left-3 sm:right-3 md:bottom-4 md:left-4 md:right-4">
                                     <div className="bg-white/90 backdrop-blur-sm rounded-lg p-2 sm:p-2.5 md:p-3 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
                                         <div className="text-xs sm:text-sm font-semibold text-energy-blue">Expertise</div>

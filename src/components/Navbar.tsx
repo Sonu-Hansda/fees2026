@@ -9,18 +9,18 @@ function Navbar() {
 
     return (
         <>
-            <div className="bg-gradient-to-r from-energy-blue to-energy-green text-white text-center p-2 sm:p-3 text-xs sm:text-sm font-medium">
+            <div className="bg-linear-to-r from-energy-blue to-energy-green text-white text-center p-2 sm:p-3 text-xs sm:text-sm font-medium">
                 <div className="hidden md:block">
-                    International Conference on Frontiers in Energy Engineering and Sustainability (FEES-2026) | National Institute of Technology Jamshedpur
+                    International Conference on Frontiers in Energy Engineering and Sustainability (FEES-2027) | National Institute of Technology Jamshedpur
                 </div>
                 <div className="md:hidden">
-                    FEES-2026 | Feb 15-17, 2026
+                    FEES-2027 | April 1-3, 2027
                 </div>
             </div>
             <nav className="flex justify-between items-center text-white bg-energy-gray p-3 sm:p-4 md:p-6 sticky top-0 z-50">
                 <div className="text-lg sm:text-xl md:text-2xl font-bold tracking-tight">
                     <span className="text-energy-amber">FEES</span>
-                    <span className="text-energy-light">-2026</span>
+                    <span className="text-energy-light">-2027</span>
                 </div>
 
                 <div className="hidden lg:flex items-center space-x-8">

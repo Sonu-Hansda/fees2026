@@ -2,7 +2,7 @@ function Schedule() {
     const schedule = [
         {
             day: "Day 1",
-            date: "February 15, 2026",
+            date: "Aril 1, 2027",
             theme: "Renewable Energy & Power Systems",
             events: [
                 { time: "08:30 - 09:30", title: "Registration & Welcome Breakfast", type: "registration" },
@@ -16,7 +16,7 @@ function Schedule() {
         },
         {
             day: "Day 2",
-            date: "February 16, 2026",
+            date: "April 2, 2027",
             theme: "Electrical & Mechanical Engineering",
             events: [
                 { time: "09:00 - 10:30", title: "Keynote: Smart Grid Technologies", type: "keynote" },
@@ -29,7 +29,7 @@ function Schedule() {
         },
         {
             day: "Day 3",
-            date: "February 17, 2026",
+            date: "April 3, 2027",
             theme: "Sustainability & Future Technologies",
             events: [
                 { time: "09:00 - 10:30", title: "Keynote: Sustainable Engineering Practices", type: "keynote" },

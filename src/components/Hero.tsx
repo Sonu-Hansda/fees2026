@@ -14,7 +14,6 @@ function Hero() {
                     <source src="https://videos.pexels.com/video-files/855428/855428-hd_1920_1080_25fps.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
-                {/* Overlay to ensure text readability */}
                 <div className="absolute inset-0 bg-black/60"></div>
                 {/* Geometric Pattern Overlay (Subtle Texture) */}
                 <div className="absolute inset-0 geometric-pattern opacity-30"></div>
@@ -26,7 +25,7 @@ function Hero() {
                         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 sm:mb-4 md:mb-6 leading-tight px-2">
                             <span className="block">International Conference on</span>
                             <span className="block text-energy-amber mt-2 sm:mt-3 md:mt-4">Frontiers in Energy Engineering</span>
-                            <span className="block">and Sustainability 2026</span>
+                            <span className="block">and Sustainability 2027</span>
                         </h1>
                         <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-4 sm:mb-6 md:mb-8 text-energy-light/90 max-w-3xl mx-auto px-4 leading-relaxed font-medium">
                             Advancing Sustainable Energy Solutions through Mechanical & Electrical Engineering Innovation

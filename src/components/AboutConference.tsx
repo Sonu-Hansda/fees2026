@@ -9,7 +9,7 @@ function AboutConference() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-12 lg:gap-16 items-center">
                     <div>
                         <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-energy-gray mb-4 sm:mb-6 md:mb-8 leading-snug">
-                            International Conference on Frontiers in Energy Engineering and Sustainability 2026
+                            International Conference on Frontiers in Energy Engineering and Sustainability 2027
                         </h3>
                         <div className="space-y-3 sm:space-y-4 md:space-y-6">
                             <p className="text-energy-gray text-sm sm:text-base md:text-lg leading-relaxed">
@@ -23,7 +23,7 @@ function AboutConference() {
                                 discussions among experts aged 40+ from around the globe.
                             </p>
                             <p className="text-energy-gray text-base md:text-lg leading-relaxed">
-                                Organized by Your College Name, FEES-2026 aims to bridge the gap between academic research
+                                Organized by Your College Name, FEES-2027 aims to bridge the gap between academic research
                                 and industrial applications in the energy sector, fostering innovation and knowledge exchange
                                 for a sustainable future.
                             </p>
@@ -82,7 +82,7 @@ function AboutConference() {
                                 </p>
                                 <p>
                                     The Department of Mechanical Engineering, one of the oldest and most prestigious
-                                    departments, is organizing FEES-2026 to foster research and innovation in energy systems.
+                                    departments, is organizing FEES-2027 to foster research and innovation in energy systems.
                                 </p>
                             </div>
                             <div className="mt-8">
