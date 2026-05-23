@@ -19,10 +19,10 @@ function Footer() {
                         <img src="/fees_logo.png" alt="FEES-2027" className="h-12 w-auto object-contain mx-auto mb-1" />
                         <p className="text-white/50 text-[10px] uppercase tracking-wider">Conference</p>
                     </div>
-                    <div className="text-center">
+                    {/* <div className="text-center">
                         <img src="/ieee.png" alt="IEEE" className="h-8 w-auto object-contain brightness-0 invert mx-auto mb-1" />
                         <p className="text-white/50 text-[10px] uppercase tracking-wider">Technical Co-Sponsorship (Pending)</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
@@ -43,7 +43,7 @@ function Footer() {
                         </p>
                         <div className="flex flex-wrap gap-2 mt-3">
                             <span className="text-[10px] px-2 py-1 border border-white/20 text-white/60">Hybrid Mode</span>
-                            <span className="text-[10px] px-2 py-1 border border-white/20 text-white/60">IEEE Xplore Indexed</span>
+                            {/* <span className="text-[10px] px-2 py-1 border border-white/20 text-white/60">IEEE Xplore Indexed</span> */}
                         </div>
                     </div>
 
@@ -136,8 +136,8 @@ function Footer() {
                         <a href="https://www.nitjsr.ac.in" target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-white transition-colors">
                             NIT Jamshedpur
                         </a>
-                        {' | '}
-                        IEEE Kolkata Section (Technical Co-Sponsorship Pending)
+                        {/* {' | '} */}
+                        {/* IEEE Kolkata Section (Technical Co-Sponsorship Pending) */}
                     </p>
                 </div>
             </div>

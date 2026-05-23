@@ -180,7 +180,7 @@ function Committee() {
                 </div>
 
                 {/* IEEE Co-Sponsorship Banner */}
-                <div
+                {/* <div
                     className="flex flex-col sm:flex-row items-center justify-between gap-5 p-6 md:p-8"
                     style={{ background: 'var(--color-primary)' }}
                 >
@@ -197,10 +197,10 @@ function Committee() {
                     <img
                         src="/ieee.png"
                         alt="IEEE"
-                        className="h-12 object-contain flex-shrink-0"
+                        className="h-12 object-contain shrink-0"
                         style={{ filter: 'brightness(0) invert(1)' }}
                     />
-                </div>
+                </div> */}
 
             </div>
         </section>

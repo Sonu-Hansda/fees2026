@@ -64,8 +64,8 @@ function Hero() {
                     <img src="/nitjsr.png" alt="NIT Jamshedpur" className="h-12 sm:h-14 md:h-16 w-auto object-contain bg-white rounded p-1" />
                     <div className="w-px h-10 bg-white/30"></div>
                     <img src="/fees_logo.png" alt="FEES-2027" className="h-14 sm:h-16 md:h-20 w-auto object-contain" />
-                    <div className="w-px h-10 bg-white/30"></div>
-                    <img src="/ieee.png" alt="IEEE" className="h-8 sm:h-10 md:h-12 w-auto object-contain brightness-0 invert" />
+                    {/* <div className="w-px h-10 bg-white/30"></div>
+                    <img src="/ieee.png" alt="IEEE" className="h-8 sm:h-10 md:h-12 w-auto object-contain brightness-0 invert" /> */}
                 </div>
 
                 {/* Conference name */}
@@ -88,8 +88,8 @@ function Hero() {
                         <span>NIT Jamshedpur, India</span>
                         <span className="text-white/40 hidden sm:inline">|</span>
                         <span>Hybrid Mode</span>
-                        <span className="text-white/40 hidden sm:inline">|</span>
-                        <span>IEEE Xplore Indexed</span>
+                        {/* <span className="text-white/40 hidden sm:inline">|</span>
+                        <span>IEEE Xplore Indexed</span> */}
                     </div>
                 </div>
 

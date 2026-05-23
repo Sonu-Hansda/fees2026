@@ -104,11 +104,11 @@ function AboutConference() {
                             Organized by
                         </span>
                     </div>
-                    <div
+                    {/* <div
                         className="w-px h-14 hidden sm:block"
                         style={{ background: 'var(--color-border)' }}
-                    ></div>
-                    <div className="flex flex-col items-center gap-2">
+                    ></div> */}
+                    {/* <div className="flex flex-col items-center gap-2">
                         <img
                             src="/ieee.png"
                             alt="IEEE"
@@ -117,7 +117,7 @@ function AboutConference() {
                         <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: 'var(--color-text-mid)' }}>
                             Technical Co-Sponsorship Sought
                         </span>
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* About NIT Jamshedpur */}

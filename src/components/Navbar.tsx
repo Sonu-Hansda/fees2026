@@ -55,8 +55,8 @@ function Navbar() {
                         <img src="/nitjsr.png" alt="NIT Jamshedpur" className="h-8 md:h-10 w-auto object-contain" />
                         <span className="hidden sm:block w-px h-7 bg-gray-200"></span>
                         <img src="/fees_logo.png" alt="FEES-2027" className="h-8 md:h-10 w-auto object-contain" />
-                        <span className="hidden sm:block w-px h-7 bg-gray-200"></span>
-                        <img src="/ieee.png" alt="IEEE" className="h-6 md:h-8 w-auto object-contain" />
+                        {/* <span className="hidden sm:block w-px h-7 bg-gray-200"></span>
+                        <img src="/ieee.png" alt="IEEE" className="h-6 md:h-8 w-auto object-contain" /> */}
                     </a>
 
                     {/* Desktop links */}
