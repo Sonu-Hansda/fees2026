@@ -9,6 +9,7 @@ import Schedule from "./components/Schedule";
 import Registration from "./components/Registration";
 import Footer from "./components/Footer";
 import PlacesNearby from "./components/PlacesNearby";
+import HowToReach from "./components/HowToreachus";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Committee />
       <Schedule />
       <Registration />
+      <HowToReach />
       <PlacesNearby/>
       <Footer />
     </>
