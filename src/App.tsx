@@ -8,6 +8,7 @@ import Committee from "./components/Committee";
 import Schedule from "./components/Schedule";
 import Registration from "./components/Registration";
 import Footer from "./components/Footer";
+import PlacesNearby from "./components/PlacesNearby";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Committee />
       <Schedule />
       <Registration />
+      <PlacesNearby/>
       <Footer />
     </>
   )

@@ -19,6 +19,7 @@ function Navbar() {
         { label: "Committee",    href: "#committee" },
         { label: "Schedule",     href: "#schedule" },
         { label: "Registration", href: "#registration" },
+        { label: "Places Nearby", href: "#places-to-visit" },
     ];
 
     const scrollTo = (href: string) => {
