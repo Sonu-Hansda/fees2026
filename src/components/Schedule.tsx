@@ -1,7 +1,7 @@
 function Schedule() {
     const schedule = [
         {
-            day: "Day 1", date: "April 1, 2027", theme: "Renewable Energy & Power Systems",
+            day: "Day 1", date: "August 5, 2027", theme: "Renewable Energy & Power Systems",
             events: [
                 { time: "08:30 – 09:30", title: "Registration & Welcome", type: "admin" },
                 { time: "09:30 – 10:30", title: "Inauguration & Opening Keynote: Future of Energy", type: "keynote" },
@@ -13,7 +13,7 @@ function Schedule() {
             ]
         },
         {
-            day: "Day 2", date: "April 2, 2027", theme: "Electrical & Mechanical Engineering",
+            day: "Day 2", date: "August 6, 2027", theme: "Electrical & Mechanical Engineering",
             events: [
                 { time: "09:00 – 10:30", title: "Keynote: Smart Grid Technologies (Track 2)", type: "keynote" },
                 { time: "10:30 – 12:30", title: "Technical Session: Power Electronics & Drives (Track 5)", type: "technical" },
@@ -24,7 +24,7 @@ function Schedule() {
             ]
         },
         {
-            day: "Day 3", date: "April 3, 2027", theme: "Sustainability & Future Technologies",
+            day: "Day 3", date: "August 7, 2027", theme: "Sustainability & Future Technologies",
             events: [
                 { time: "09:00 – 10:30", title: "Keynote: AI & Digitalization in Energy (Track 8)", type: "keynote" },
                 { time: "10:30 – 12:30", title: "Technical Session: Advanced Materials (Track 9)", type: "technical" },
@@ -86,7 +86,7 @@ function Schedule() {
                                                 {typeLabel[ev.type]}
                                             </span>
                                             <span
-                                                className="text-[10px] font-medium whitespace-nowrap flex-shrink-0"
+                                                className="text-[10px] font-medium whitespace-nowrap shrink-0"
                                                 style={{ color: 'var(--color-text-light)' }}
                                             >
                                                 {ev.time}

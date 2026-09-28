@@ -1,39 +1,29 @@
 function ImportantDates() {
     const dates = [
         {
+            event:  "Paper Submission Opening date",
+            date:   "October 20, 2026",
+            status: "—",
+        },
+        {
             event:  "Paper Submission Deadline",
-            date:   "December 31, 2026",
-            status: "Open",
-        },
-        {
-            event:  "Notification of Acceptance",
-            date:   "February 15, 2027",
+            date:   "April 30, 2027",
             status: "—",
         },
         {
-            event:  "Camera-Ready Submission",
-            date:   "March 1, 2027",
+            event:  "Acceptance intimation",
+            date:   "June 15, 2027",
             status: "—",
         },
-        {
-            event:  "Early Bird Registration Closes",
-            date:   "March 15, 2027",
+         {
+            event:  "Registration deadline",
+            date:   "July 20, 2027",
             status: "—",
         },
-        {
-            event:  "Conference Day 1",
-            date:   "April 1, 2027",
-            status: "Conference",
-        },
-        {
-            event:  "Conference Day 2",
-            date:   "April 2, 2027",
-            status: "Conference",
-        },
-        {
-            event:  "Conference Day 3",
-            date:   "April 3, 2027",
-            status: "Conference",
+         {
+            event:  "Conference dates",
+            date:   "August 5th 2027 - August 7th 2027",
+            status: "—",
         },
     ];
 

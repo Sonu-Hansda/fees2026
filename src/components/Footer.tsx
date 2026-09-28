@@ -5,26 +5,6 @@ function Footer() {
 
     return (
         <footer style={{ background: 'var(--color-primary)', color: 'white' }}>
-            {/* Logo strip */}
-            <div
-                className="border-b py-5 px-4"
-                style={{ borderColor: 'rgba(255,255,255,0.12)' }}
-            >
-                <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-8 sm:gap-12">
-                    <div className="text-center">
-                        <img src="/nitjsr.png" alt="NIT Jamshedpur" className="h-10 w-auto object-contain bg-white rounded p-1 mx-auto mb-1" />
-                        <p className="text-white/50 text-[10px] uppercase tracking-wider">Organizer</p>
-                    </div>
-                    <div className="text-center">
-                        <img src="/fees_logo.png" alt="FEES-2027" className="h-12 w-auto object-contain mx-auto mb-1" />
-                        <p className="text-white/50 text-[10px] uppercase tracking-wider">Conference</p>
-                    </div>
-                    {/* <div className="text-center">
-                        <img src="/ieee.png" alt="IEEE" className="h-8 w-auto object-contain brightness-0 invert mx-auto mb-1" />
-                        <p className="text-white/50 text-[10px] uppercase tracking-wider">Technical Co-Sponsorship (Pending)</p>
-                    </div> */}
-                </div>
-            </div>
 
             {/* Main footer */}
             <div className="max-w-7xl mx-auto px-4 py-10 sm:py-12">
@@ -36,7 +16,7 @@ function Footer() {
                         <p className="text-white/60 text-sm leading-relaxed mb-3">
                             International Conference on Frontiers in Energy Engineering and Sustainability
                         </p>
-                        <p className="text-white/80 text-sm font-medium">April 1–3, 2027</p>
+                        <p className="text-white/80 text-sm font-medium">August 5–7, 2027</p>
                         <p className="text-white/50 text-xs mt-1">
                             National Institute of Technology Jamshedpur<br />
                             Adityapur, Jamshedpur, Jharkhand – 831014
@@ -78,11 +58,11 @@ function Footer() {
                         <h4 className="text-xs font-bold uppercase tracking-widest mb-4 text-white/80">Key Dates</h4>
                         <ul className="space-y-2 text-sm">
                             {[
-                                ['Paper Submission', 'December 31, 2026'],
-                                ['Acceptance Notice', 'February 15, 2027'],
-                                ['Camera-Ready', 'March 1, 2027'],
-                                ['Early Bird Reg.', 'Until March 15, 2027'],
-                                ['Conference', 'April 1–3, 2027'],
+                                ['Paper Submission Opening Date', 'October 20, 2026'],
+                                ['Paper Submission Deadline', 'April 30, 2027'],
+                                ['Acceptance intimation', 'June 15, 2027'],
+                                ['Registration Deadline', 'July 20, 2027'],
+                                ['Conference Dates', 'August 5–7, 2027'],
                             ].map(([k, v]) => (
                                 <li key={k}>
                                     <div className="text-white/40 text-[10px] uppercase">{k}</div>

@@ -4,7 +4,7 @@ function Registration() {
             category: "Student",
             note: "UG / PG / PhD Scholars",
             earlyBird: "INR 2,500",
-            regular:   "INR 3,500",
+            regular: "INR 3,500",
             features: [
                 "Full Conference Access (3 Days)",
                 "Workshop Participation",
@@ -18,7 +18,7 @@ function Registration() {
             category: "Academic / Faculty",
             note: "Faculty / Researchers / Post-Docs",
             earlyBird: "INR 5,000",
-            regular:   "INR 7,000",
+            regular: "INR 7,000",
             features: [
                 "Full Conference Access (3 Days)",
                 "Workshop Participation",
@@ -34,7 +34,7 @@ function Registration() {
             category: "Industry / International",
             note: "Industry Professionals & Foreign Delegates",
             earlyBird: "INR 8,000 / USD 200",
-            regular:   "INR 10,000 / USD 250",
+            regular: "INR 10,000 / USD 250",
             features: [
                 "Full Conference Access (3 Days)",
                 "All Workshops",
@@ -65,7 +65,7 @@ function Registration() {
                         <thead>
                             <tr>
                                 <th>Category</th>
-                                <th>Early Bird (Until Mar 15, 2027)</th>
+                                <th>Early Bird</th>
                                 <th>Regular</th>
                                 <th>Includes</th>
                             </tr>
@@ -97,39 +97,6 @@ function Registration() {
                     </table>
                 </div>
 
-                {/* Registration timeline */}
-                <h3 className="text-sm font-bold uppercase tracking-wider mb-4" style={{ color: 'var(--color-primary)' }}>
-                    Registration Timeline
-                </h3>
-                <div className="conf-card mb-10 md:mb-12 overflow-x-auto">
-                    <table className="conf-table">
-                        <thead>
-                            <tr>
-                                <th>Phase</th>
-                                <th>Period</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td className="font-medium">Paper Submission Deadline</td>
-                                <td>December 31, 2026</td>
-                            </tr>
-                            <tr>
-                                <td className="font-medium">Early Bird Registration</td>
-                                <td>Until March 15, 2027</td>
-                            </tr>
-                            <tr>
-                                <td className="font-medium">Regular Registration</td>
-                                <td>March 16 – March 28, 2027</td>
-                            </tr>
-                            <tr>
-                                <td className="font-medium">On-site Registration</td>
-                                <td>April 1–3, 2027</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
                 {/* Contact for registration */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8">
                     <div className="conf-card p-5 md:p-6">
@@ -151,7 +118,7 @@ function Registration() {
                                             {k === 'Email' || k === 'Alternate Email' ? (
                                                 <a href={`mailto:${v}`} className="hover:underline" style={{ color: 'var(--color-primary)' }}>{v}</a>
                                             ) : k === 'Phone' ? (
-                                                <a href={`tel:${v.replace(/\s/g,'')}`} className="hover:underline" style={{ color: 'var(--color-primary)' }}>{v}</a>
+                                                <a href={`tel:${v.replace(/\s/g, '')}`} className="hover:underline" style={{ color: 'var(--color-primary)' }}>{v}</a>
                                             ) : v}
                                         </td>
                                     </tr>
