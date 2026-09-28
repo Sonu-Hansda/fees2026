@@ -128,7 +128,7 @@ function Committee() {
                                 className="font-semibold text-sm mb-1"
                                 style={{ color: 'var(--color-primary)' }}
                             >
-                                Technical Program Chair
+                                General Chair
                             </div>
                             <div className="text-xs mb-0.5" style={{ color: 'var(--color-text-mid)' }}>
                                 Dept. of Electrical Engineering, NIT Jamshedpur
