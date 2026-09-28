@@ -82,7 +82,7 @@ function Navbar() {
                                         {item.label}
                                         <svg className="w-3 h-3 text-gray-400 group-hover:text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                                         {/* Dropdown Menu */}
-                                        <div className="absolute top-full left-0 mt-0 w-48 bg-white border border-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 overflow-hidden">
+                                        <div className="absolute top-full left-0 mt-0 w-48 bg-white border border-blue-900 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 overflow-hidden">
                                             {item.dropdown?.map(dropItem => (
                                                 <a
                                                     key={dropItem.href}

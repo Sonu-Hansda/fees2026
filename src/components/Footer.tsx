@@ -75,7 +75,7 @@ function Footer() {
                     {/* Contact */}
                     <div>
                         <h4 className="text-xs font-bold uppercase tracking-widest mb-4 text-white/80">Contact</h4>
-                        <div className="space-y-2 text-sm">
+                        {/* <div className="space-y-2 text-sm">
                             <div>
                                 <div className="text-white/40 text-[10px] uppercase">General Chair</div>
                                 <div className="text-white/80 font-medium">Dr. Dulari Hansdah</div>
@@ -103,7 +103,13 @@ function Footer() {
                                     Google Scholar &rarr;
                                 </a>
                             </div>
-                        </div>
+                        </div> */}
+
+                        <div>
+                            <div className="text-white/60 text-[10px] uppercase">Technical team</div>
+                                <div className="text-white/40 text-[14px]"><p>Sonu Hansdah</p>
+                                <p>Sejal Dutta</p></div>
+                                </div>
                     </div>
                 </div>
 

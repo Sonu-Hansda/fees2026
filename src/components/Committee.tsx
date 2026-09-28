@@ -22,38 +22,85 @@ function Committee() {
                 </p>
 
                 {/* Chief Patron */}
-                <div className="mb-10">
-                    <h3
-                        className="text-xs font-semibold uppercase tracking-widest mb-3 pb-2 border-b"
-                        style={{ color: 'var(--color-primary)', borderColor: 'var(--color-border)' }}
-                    >
-                        Chief Patron
-                    </h3>
-                    <div className="conf-card p-5">
-                        <div
-                            className="font-bold text-base md:text-lg"
-                            style={{ color: 'var(--color-text)' }}
-                        >
-                            Director
-                        </div>
-                        <div
-                            className="text-sm mt-0.5"
-                            style={{ color: 'var(--color-primary)' }}
-                        >
-                            National Institute of Technology Jamshedpur
-                        </div>
-                    </div>
-                </div>
+                <div className="mb-12">
+  <h3
+    className="text-lg font-bold uppercase tracking-widest mb-4 pb-2 border-b "
+    style={{ color: 'var(--color-primary)', borderColor: 'var(--color-border)' }}
+  >
+    CHIEF PATRON
+  </h3>
+
+  
+  <div 
+    className="bg-slate-50 border border-slate-200 rounded-lg shadow-sm p-8 flex flex-col items-center text-center transition-all hover:shadow-md"
+    style={{ borderColor: 'var(--color-border)' }}
+  >
+    
+    <div className="relative mb-4">
+      <img
+        src="./directorsir.jpg"
+        alt="Prof. (Dr.) Goutam Sutradhar"
+        className="w-36 h-36 md:w-44 md:h-44 object-cover object-top rshadow-md border-2 border-white"
+      />
+    </div>
+
+    {/* Name and Title */}
+    <div
+      className="font-bold text-lg md:text-xl"
+      style={{ color: 'var(--color-text)' }}
+    >
+      Prof. (Dr.) Goutam Sutradhar
+    </div>
+    <div
+      className="text-sm font-medium mt-1 mb-5"
+      style={{ color: 'var(--color-primary)' }}
+    >
+      Director, National Institute of Technology Jamshedpur
+    </div>
+  </div>
+</div>
 
                 {/* Conference Chairs */}
                 <div className="mb-10">
                     <h3
-                        className="text-xs font-semibold uppercase tracking-widest mb-3 pb-2 border-b"
+                        className="text-lg font-bold uppercase tracking-widest mb-3 pb-2 border-b"
                         style={{ color: 'var(--color-primary)', borderColor: 'var(--color-border)' }}
                     >
                         Conference Chairs
                     </h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+{/* Dr. Veerpratap Meena */}
+                        <div className="conf-card p-5">
+                            <div
+                                className="font-bold text-base md:text-lg mb-0.5"
+                                style={{ color: 'var(--color-text)' }}
+                            >
+                                Dr. Veerpratap Meena
+                            </div>
+                            <div
+                                className="font-semibold text-sm mb-1"
+                                style={{ color: 'var(--color-primary)' }}
+                            >
+                                Technical Program Chair
+                            </div>
+                            <div className="text-xs mb-0.5" style={{ color: 'var(--color-text-mid)' }}>
+                                Dept. of Electrical Engineering, NIT Jamshedpur
+                            </div>
+                            <div className="flex flex-wrap gap-2 mt-3">
+                                <a
+                                    href="mailto:veerpratap.ee@nitjsr.ac.in"
+                                    className="text-xs px-3 py-1 border font-medium"
+                                    style={{
+                                        color: 'var(--color-primary)',
+                                        borderColor: 'var(--color-primary)',
+                                        textDecoration: 'none',
+                                    }}
+                                >
+                                    veerpratap.ee@nitjsr.ac.in
+                                </a>
+                            </div>
+                        </div>
 
                         {/* Dr. Dulari Hansdah */}
                         <div className="conf-card p-5">
@@ -116,37 +163,7 @@ function Committee() {
                             </div>
                         </div>
 
-                        {/* Dr. Veerpratap Meena */}
-                        <div className="conf-card p-5">
-                            <div
-                                className="font-bold text-base md:text-lg mb-0.5"
-                                style={{ color: 'var(--color-text)' }}
-                            >
-                                Dr. Veerpratap Meena
-                            </div>
-                            <div
-                                className="font-semibold text-sm mb-1"
-                                style={{ color: 'var(--color-primary)' }}
-                            >
-                                General Chair
-                            </div>
-                            <div className="text-xs mb-0.5" style={{ color: 'var(--color-text-mid)' }}>
-                                Dept. of Electrical Engineering, NIT Jamshedpur
-                            </div>
-                            <div className="flex flex-wrap gap-2 mt-3">
-                                <a
-                                    href="mailto:veerpratap.ee@nitjsr.ac.in"
-                                    className="text-xs px-3 py-1 border font-medium"
-                                    style={{
-                                        color: 'var(--color-primary)',
-                                        borderColor: 'var(--color-primary)',
-                                        textDecoration: 'none',
-                                    }}
-                                >
-                                    veerpratap.ee@nitjsr.ac.in
-                                </a>
-                            </div>
-                        </div>
+                        
 
                     </div>
                 </div>
@@ -154,7 +171,7 @@ function Committee() {
                 {/* TPC Key Facts */}
                 <div className="mb-10">
                     <h3
-                        className="text-xs font-semibold uppercase tracking-widest mb-3 pb-2 border-b"
+                        className="text-lg font-bold uppercase tracking-widest mb-3 pb-2 border-b"
                         style={{ color: 'var(--color-primary)', borderColor: 'var(--color-border)' }}
                     >
                         Technical Program Committee — Key Facts
