@@ -1,41 +1,45 @@
 function PlacesNearby() {
     const places = [
         {
+            title: "Tata Steel",
+            distance: "6 km from NIT Jamshedpur",
+            description: "Asia’s first integrated steel plant and one of India’s largest single-location steel plants, Tata Steel’s Jamshedpur Works spans a vast industrial area with an annual crude steel capacity of 11 million tonnes.",
+            image: "/tata_steel.webp"
+        },
+        {
             title: "Tribal Culture Centre",
             distance: "7 km from NIT Jamshedpur",
-            description: "Showcases Jharkhand's indigenous tribal heritage, featuring sculptures of freedom fighters like Birsa Munda and intricate tribal art galleries.",
+            description: "Showcases Jharkhand’s rich tribal heritage and culture, featuring traditional art, sculptures, and exhibits highlighting the history and contributions of tribal communities, including freedom fighter Birsa Munda.",
             image: "/tribal.webp", 
         },
         {
-            title: "Sir Dorabji Tata Park",
-            distance: "6 km from NIT Jamshedpur",
-            description: "A peaceful retreat featuring manicured lawns, illuminated fountains, a statue of Sir Dorabji Tata, and a vibrant annual December flower show.",
-            image: "/dorabji-tata.jpg",
-        },
-        {
-            title: "Dalma Wildlife Sanctuary",
-            distance: "15 km from NIT Jamshedpur",
-            description: "Rich in biodiversity along the Subarnarekha River within the Dalma Hills. Offers wildlife safaris, dense green forests, and close encounters with elephants and deer.",
-            image: "/dalma.jpg",
-        },
-        {
-            title: "Bhuvaneshwari Temple",
-            distance: "12 km from NIT Jamshedpur",
-            description: "Perched 500 feet high on Bhuvaneshwari Hill. Dedicated to Goddess Bhuvaneshwari, it showcases South Indian architecture and offers panoramic city views.",
-            image: "/bhuvaneshwari.jpg",
-        },
-        {
-            title: "Dimna Lake",
-            distance: "13 km from NIT Jamshedpur",
-            description: "A peaceful getaway nestled amid rolling hills. Ideal for picnics, nature photography, and water sports like boating and rowing.",
-            image: "/dimna.jpg",
-        },
-        {
-            title: "Tata Steel",
-            distance: "6km from NIT Jamshedpur",
-            description: "Asia’s first and India's largest single-location integrated steel plant, spanning over sprawling grounds with an annual crude steel capacity of 11 million tonnes.",
-            image: "/tatasteel.jpg"
-        }
+    title: "Dalma Wildlife Sanctuary",
+    distance: "15 km from NIT Jamshedpur",
+    description:
+        "A 195 sq. km wildlife sanctuary in the Dalma Hills, known for its rich forests and significant population of Indian elephants, along with deer and other wildlife.",
+    image: "/dalma.jpg",
+},
+{
+    title: "Dimna Lake",
+    distance: "13 km from NIT Jamshedpur",
+    description:
+        "A scenic artificial reservoir at the foothills of the Dalma Hills, surrounded by forests and greenery. It is a popular spot for boating, nature walks, and enjoying views of the surrounding hills.",
+    image: "/dimna.jpg",
+},
+{
+    title: "Sir Dorabji Tata Park",
+    distance: "6 km from NIT Jamshedpur",
+    description:
+        "A well-maintained urban park dedicated to Sir Dorabji Tata, featuring landscaped gardens, fountains, and open spaces that offer a peaceful break within the city.",
+    image: "/dorabji.webp",
+},
+{
+    title: "Bhuvaneshwari Temple",
+    distance: "12 km from NIT Jamshedpur",
+    description:
+        "A hilltop temple dedicated to Goddess Bhuvaneshwari, known for its elevated location and panoramic views of Jamshedpur and the surrounding landscape.",
+    image: "/bhuvaneshwari.webp",
+},
     ];
 
     return (
@@ -46,7 +50,7 @@ function PlacesNearby() {
                 <span className="section-rule"></span>
 
                 {/* Intro note */}
-                <p className="text-sm md:text-base mb-10 leading-relaxed" style={{ color: 'var(--color-text-mid)' }}>
+                <p className="text-sm mb-12" style={{ color: 'var(--color-text-mid)' }}>
                     Explore the vibrant culture, scenic landscapes, and landmark attractions around Jamshedpur during your stay for FEES-2027.
                 </p>
 
@@ -59,7 +63,8 @@ function PlacesNearby() {
                                     <img 
                                         src={place.image} 
                                         alt={place.title}
-                                        className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                                        loading="lazy"
+                                        className="w-full h-full object-contain object-top"
                                     />
                                 </div>
                                 <div className="p-5">
@@ -71,13 +76,12 @@ function PlacesNearby() {
                                             {place.title}
                                         </h3>
                                         <span 
-                                            className="text-xs font-semibold mt-1 inline-block px-2.5 py-0.5 rounded-full w-fit"
-                                            style={{ backgroundColor: 'var(--color-border)', color: 'var(--color-primary)' }}
+                                            className="text-xs"
                                         >
                                             {place.distance}
                                         </span>
                                     </div>
-                                    <p className="text-xs md:text-sm leading-relaxed" style={{ color: 'var(--color-text-mid)' }}>
+                                    <p className="text-xs md:text-sm text-gray-600 font-light">
                                         {place.description}
                                     </p>
                                 </div>
