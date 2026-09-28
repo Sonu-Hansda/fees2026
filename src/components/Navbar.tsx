@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 function Navbar() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
+    const [openMobileDropdown, setOpenMobileDropdown] = useState<string | null>(null);
 
     useEffect(() => {
         const handleScroll = () => setIsScrolled(window.scrollY > 10);
@@ -11,21 +12,30 @@ function Navbar() {
     }, []);
 
     const navLinks = [
-        { label: "Home",         href: "#home" },
-        { label: "About",        href: "#about" },
-        { label: "Dates",        href: "#dates" },
+        { label: "Home", href: "#home" },
+        { label: "About", href: "#about" },
+        { label: "Important Dates", href: "#dates" },
         { label: "Call for Papers", href: "#papers" },
-        { label: "Speakers",     href: "#speakers" },
-        { label: "Committee",    href: "#committee" },
-        { label: "Schedule",     href: "#schedule" },
-        { label: "Registration", href: "#registration" },
-        { label: "How to Reach Us", href: "#how-to-reach" },
-        { label: "Places Nearby", href: "#places-to-visit" },
-    
+        { label: "Schedule", href: "#schedule" },
+        {
+            label: "People",
+            dropdown: [
+                { label: "Speakers", href: "#speakers" },
+                { label: "Committee", href: "#committee" },
+            ]
+        },
+        {
+            label: "Venue",
+            dropdown: [
+                { label: "How to Reach Us", href: "#how-to-reach" },
+                { label: "Places Nearby", href: "#places-to-visit" },
+            ]
+        }
     ];
 
     const scrollTo = (href: string) => {
         setIsMobileMenuOpen(false);
+        setOpenMobileDropdown(null);
         const el = document.querySelector(href);
         if (el) {
             const top = el.getBoundingClientRect().top + window.scrollY - 72;
@@ -35,14 +45,6 @@ function Navbar() {
 
     return (
         <>
-            {/* Announcement bar */}
-            <div style={{ background: 'var(--color-primary)' }} className="text-white text-center py-2 px-4 text-xs font-medium tracking-wide">
-                <span className="hidden md:inline">
-                    FEES-2027 — International Conference on Frontiers in Energy Engineering and Sustainability &nbsp;|&nbsp; April 1–3, 2027 &nbsp;|&nbsp; NIT Jamshedpur, India &nbsp;|&nbsp; Hybrid Mode
-                </span>
-                <span className="md:hidden">FEES-2027 &nbsp;|&nbsp; April 1–3, 2027 &nbsp;|&nbsp; NIT Jamshedpur</span>
-            </div>
-
             {/* Main nav */}
             <nav
                 className={`sticky top-0 z-50 bg-white border-b transition-shadow duration-200 ${isScrolled ? 'shadow-md' : ''}`}
@@ -58,31 +60,49 @@ function Navbar() {
                         <img src="/nitjsr.png" alt="NIT Jamshedpur" className="h-8 md:h-10 w-auto object-contain" />
                         <span className="hidden sm:block w-px h-7 bg-gray-200"></span>
                         <img src="/fees_logo.png" alt="FEES-2027" className="h-8 md:h-10 w-auto object-contain" />
-                        {/* <span className="hidden sm:block w-px h-7 bg-gray-200"></span>
-                        <img src="/ieee.png" alt="IEEE" className="h-6 md:h-8 w-auto object-contain" /> */}
                     </a>
 
                     {/* Desktop links */}
-                    <ul className="hidden lg:flex items-center gap-5 xl:gap-6">
-                        {navLinks.map(link => (
-                            <li key={link.href}>
-                                <a
-                                    href={link.href}
-                                    onClick={e => { e.preventDefault(); scrollTo(link.href); }}
-                                    className="text-xs xl:text-sm font-medium uppercase tracking-wide transition-colors duration-150"
-                                    style={{ color: 'var(--color-text-mid)' }}
-                                    onMouseEnter={e => (e.currentTarget.style.color = 'var(--color-primary)')}
-                                    onMouseLeave={e => (e.currentTarget.style.color = 'var(--color-text-mid)')}
-                                >
-                                    {link.label}
-                                </a>
+                    <ul className="hidden lg:flex items-center gap-5 xl:gap-8">
+                        {navLinks.map((item, idx) => (
+                            <li key={idx} className="relative group">
+                                {item.href ? (
+                                    <a
+                                        href={item.href}
+                                        onClick={e => { e.preventDefault(); scrollTo(item.href as string); }}
+                                        className="flex items-center gap-1 text-xs font-semibold uppercase tracking-wide py-5 transition-colors duration-150"
+                                        style={{ color: 'var(--color-text-mid)' }}
+                                        onMouseEnter={e => (e.currentTarget.style.color = 'var(--color-primary)')}
+                                        onMouseLeave={e => (e.currentTarget.style.color = 'var(--color-text-mid)')}
+                                    >
+                                        {item.label}
+                                    </a>
+                                ) : (
+                                    <div className="flex items-center gap-1 text-xs font-semibold uppercase tracking-wide cursor-pointer py-5 transition-colors duration-150" style={{ color: 'var(--color-text-mid)' }}>
+                                        {item.label}
+                                        <svg className="w-3 h-3 text-gray-400 group-hover:text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+                                        {/* Dropdown Menu */}
+                                        <div className="absolute top-full left-0 mt-0 w-48 bg-white border border-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 overflow-hidden">
+                                            {item.dropdown?.map(dropItem => (
+                                                <a
+                                                    key={dropItem.href}
+                                                    href={dropItem.href}
+                                                    onClick={e => { e.preventDefault(); scrollTo(dropItem.href); }}
+                                                    className="block px-4 py-3 text-sm text-gray-600 hover:bg-gray-50 hover:text-blue-600 transition-colors"
+                                                >
+                                                    {dropItem.label}
+                                                </a>
+                                            ))}
+                                        </div>
+                                    </div>
+                                )}
                             </li>
                         ))}
                         <li>
                             <a
                                 href="#registration"
                                 onClick={e => { e.preventDefault(); scrollTo('#registration'); }}
-                                className="btn-primary text-xs xl:text-sm"
+                                className="btn-primary text-xs"
                             >
                                 Register
                             </a>
@@ -110,26 +130,52 @@ function Navbar() {
 
                 {/* Mobile menu */}
                 <div
-                    className={`lg:hidden border-t overflow-hidden transition-all duration-200 ${isMobileMenuOpen ? 'max-h-screen' : 'max-h-0'}`}
+                    className={`lg:hidden border-t overflow-hidden transition-all duration-300 ${isMobileMenuOpen ? 'max-h-screen pb-4' : 'max-h-0'}`}
                     style={{ borderColor: 'var(--color-border)', background: 'var(--color-off-white)' }}
                 >
-                    <div className="px-4 py-3 space-y-1">
-                        {navLinks.map(link => (
-                            <a
-                                key={link.href}
-                                href={link.href}
-                                onClick={e => { e.preventDefault(); scrollTo(link.href); }}
-                                className="block py-2.5 px-3 text-sm font-medium border-b"
-                                style={{ color: 'var(--color-text)', borderColor: 'var(--color-border)' }}
-                            >
-                                {link.label}
-                            </a>
+                    <div className="px-4 py-2 space-y-1">
+                        {navLinks.map((item, idx) => (
+                            <div key={idx} className="border-b" style={{ borderColor: 'var(--color-border)' }}>
+                                {item.href ? (
+                                    <a
+                                        href={item.href}
+                                        onClick={e => { e.preventDefault(); scrollTo(item.href as string); }}
+                                        className="block py-3 px-3 text-sm font-medium"
+                                        style={{ color: 'var(--color-text)' }}
+                                    >
+                                        {item.label}
+                                    </a>
+                                ) : (
+                                    <>
+                                        <button 
+                                            onClick={() => setOpenMobileDropdown(openMobileDropdown === item.label ? null : item.label)}
+                                            className="w-full flex items-center justify-between py-3 px-3 text-sm font-medium"
+                                            style={{ color: 'var(--color-text)' }}
+                                        >
+                                            {item.label}
+                                            <svg className={`w-4 h-4 transition-transform ${openMobileDropdown === item.label ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+                                        </button>
+                                        <div className={`pl-6 overflow-hidden transition-all duration-200 ${openMobileDropdown === item.label ? 'max-h-48' : 'max-h-0'}`}>
+                                            {item.dropdown?.map(dropItem => (
+                                                <a
+                                                    key={dropItem.href}
+                                                    href={dropItem.href}
+                                                    onClick={e => { e.preventDefault(); scrollTo(dropItem.href); }}
+                                                    className="block py-2 text-sm text-gray-500 hover:text-blue-600"
+                                                >
+                                                    {dropItem.label}
+                                                </a>
+                                            ))}
+                                        </div>
+                                    </>
+                                )}
+                            </div>
                         ))}
-                        <div className="pt-3">
+                        <div className="pt-4 px-2">
                             <a
                                 href="#registration"
                                 onClick={e => { e.preventDefault(); scrollTo('#registration'); }}
-                                className="btn-primary block text-center"
+                                className="btn-primary block text-center py-2"
                             >
                                 Register Now
                             </a>

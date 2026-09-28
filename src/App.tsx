@@ -24,7 +24,7 @@ function App() {
       <Schedule />
       <Registration />
       <HowToReach />
-      <PlacesNearby/>
+      <PlacesNearby />
       <Footer />
     </>
   )

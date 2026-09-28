@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 
 function Countdown() {
-    const target = new Date('2027-04-01T09:00:00+05:30').getTime();
+    const target = new Date('2027-08-05T09:00:00+05:30').getTime();
     const calc = () => {
         const d = target - Date.now();
         if (d <= 0) return { days: 0, hours: 0, minutes: 0, seconds: 0 };
         return {
-            days:    Math.floor(d / 86400000),
-            hours:   Math.floor((d % 86400000) / 3600000),
+            days: Math.floor(d / 86400000),
+            hours: Math.floor((d % 86400000) / 3600000),
             minutes: Math.floor((d % 3600000) / 60000),
             seconds: Math.floor((d % 60000) / 1000),
         };
@@ -23,14 +23,14 @@ function Countdown() {
             {([['Days', t.days], ['Hours', t.hours], ['Min', t.minutes], ['Sec', t.seconds]] as [string, number][]).map(([label, val]) => (
                 <div key={label} className="text-center">
                     <div
-                        className="w-16 sm:w-20 md:w-24 py-3 sm:py-4"
-                        style={{ background: 'rgba(255,255,255,0.12)', border: '1px solid rgba(255,255,255,0.25)' }}
+                        className="w-16 sm:w-20 md:w-24 py-3 sm:py-4 rounded-lg shadow-sm"
+                        style={{ background: 'rgba(255,255,255,0.8)', border: '1px solid rgba(0,0,0,0.1)' }}
                     >
-                        <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tabular-nums">
+                        <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-800 tabular-nums">
                             {String(val).padStart(2, '0')}
                         </div>
                     </div>
-                    <div className="text-white/60 text-[10px] sm:text-xs mt-1 uppercase tracking-widest">{label}</div>
+                    <div className="text-slate-500 font-semibold text-[10px] sm:text-xs mt-1 uppercase tracking-widest">{label}</div>
                 </div>
             ))}
         </div>
@@ -45,57 +45,59 @@ function Hero() {
     return (
         <section id="home" className="relative min-h-screen flex flex-col">
             {/* Background */}
-            <div className="absolute inset-0 overflow-hidden">
-                <video
-                    autoPlay loop muted playsInline
+            <div className="absolute inset-0 overflow-hidden bg-slate-50">
+                <img
+                    src="/bg.png"
+                    alt="Conference Background"
                     className="absolute w-full h-full object-cover"
-                    poster="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80"
-                >
-                    <source src="https://videos.pexels.com/video-files/855428/855428-hd_1920_1080_25fps.mp4" type="video/mp4" />
-                </video>
-                <div className="absolute inset-0" style={{ background: 'rgba(27,54,93,0.82)' }}></div>
+                />
             </div>
 
             {/* Content */}
-            <div className="relative flex-1 flex flex-col items-center justify-center text-white px-4 py-20 md:py-0 text-center">
+            <div className="relative flex-1 flex flex-col items-center justify-center text-slate-900 px-4 py-20 md:py-0 text-center">
 
                 {/* Organizer logos */}
                 <div className="flex items-center justify-center gap-5 sm:gap-8 mb-8 sm:mb-10">
-                    <img src="/nitjsr.png" alt="NIT Jamshedpur" className="h-12 sm:h-14 md:h-16 w-auto object-contain bg-white rounded p-1" />
-                    <div className="w-px h-10 bg-white/30"></div>
+                    <img src="/nitjsr.png" alt="NIT Jamshedpur" className="h-12 sm:h-14 md:h-16 w-auto object-contain bg-white rounded p-1 shadow-sm" />
+                    <div className="w-px h-10 bg-slate-300"></div>
                     <img src="/fees_logo.png" alt="FEES-2027" className="h-14 sm:h-16 md:h-20 w-auto object-contain" />
                     {/* <div className="w-px h-10 bg-white/30"></div>
                     <img src="/ieee.png" alt="IEEE" className="h-8 sm:h-10 md:h-12 w-auto object-contain brightness-0 invert" /> */}
                 </div>
 
                 {/* Conference name */}
-                <div className="max-w-4xl mx-auto mb-6 sm:mb-8">
-                    <p className="text-white/70 text-xs sm:text-sm uppercase tracking-widest mb-3 font-medium">
+                <div className="max-w-5xl mx-auto mb-8 sm:mb-12 px-2">
+                    <p className="text-slate-600 text-xs sm:text-sm md:text-base uppercase tracking-[0.2em] mb-4 sm:mb-6 font-semibold">
                         National Institute of Technology Jamshedpur presents
                     </p>
-                    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-3">
-                        International Conference on<br />
-                        <span className="text-white">Frontiers in Energy Engineering</span><br />
-                        <span className="text-white">and Sustainability</span>
+
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight sm:leading-tight md:leading-tight lg:leading-[1.1] mb-8">
+                        <span className="block text-xl sm:text-2xl md:text-3xl font-medium text-slate-700 mb-2 sm:mb-3">
+                            International Conference on
+                        </span>
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-600 to-emerald-600 drop-shadow-sm">
+                            Frontiers in Energy Engineering
+                        </span>
+                        <br />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 via-emerald-500 to-blue-600 drop-shadow-sm">
+                            and Sustainability
+                        </span>
                     </h1>
-                    <div className="text-xl sm:text-2xl font-bold text-white/80 mb-4">FEES-2027</div>
+
                     <div
-                        className="inline-flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm sm:text-base font-medium px-4 py-2"
-                        style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)' }}
+                        className="inline-flex flex-col sm:flex-row flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm sm:text-base font-medium sm:px-6 sm:py-3 sm:rounded-full sm:backdrop-blur-md sm:shadow-sm sm:bg-white/60 sm:border sm:border-slate-200"
                     >
-                        <span>April 1–3, 2027</span>
-                        <span className="text-white/40 hidden sm:inline">|</span>
-                        <span>NIT Jamshedpur, India</span>
-                        <span className="text-white/40 hidden sm:inline">|</span>
-                        <span>Hybrid Mode</span>
-                        {/* <span className="text-white/40 hidden sm:inline">|</span>
-                        <span>IEEE Xplore Indexed</span> */}
+                        <span className="text-slate-800">August 5–7, 2027</span>
+                        <span className="text-slate-400 hidden sm:inline">•</span>
+                        <span className="text-slate-800">NIT Jamshedpur, India</span>
+                        <span className="text-slate-400 hidden sm:inline">•</span>
+                        <span className="text-slate-800">Hybrid Mode</span>
                     </div>
                 </div>
 
                 {/* Countdown */}
                 <div className="mb-8 sm:mb-10">
-                    <p className="text-white/50 text-xs uppercase tracking-widest mb-3">Conference begins in</p>
+                    <p className="text-slate-500 font-semibold text-xs uppercase tracking-widest mb-3">Conference begins in</p>
                     <Countdown />
                 </div>
 
@@ -111,22 +113,22 @@ function Hero() {
                     <a
                         href="#papers"
                         onClick={e => { e.preventDefault(); scrollTo('#papers'); }}
-                        className="btn-outline text-sm sm:text-base px-8 py-3"
-                        style={{ color: 'white', borderColor: 'white' }}
-                        onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(255,255,255,0.15)'; }}
-                        onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'transparent'; }}
+                        className="btn-outline text-sm sm:text-base px-8 py-3 shadow-sm"
+                        style={{ color: '#1e293b', borderColor: '#cbd5e1' }}
+                        onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(0,0,0,0.05)'; (e.currentTarget as HTMLElement).style.borderColor = '#94a3b8'; }}
+                        onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'transparent'; (e.currentTarget as HTMLElement).style.borderColor = '#cbd5e1'; }}
                     >
                         Submit Paper
                     </a>
                 </div>
 
-                <p className="text-white/40 text-xs">
+                <p className="text-slate-500 font-medium text-xs">
                     Accepted papers submitted for inclusion in IEEE Xplore Digital Library
                 </p>
             </div>
 
             {/* Marquee */}
-            <div className="relative overflow-hidden" style={{ background: 'rgba(255,255,255,0.08)', borderTop: '1px solid rgba(255,255,255,0.12)' }}>
+            {/* <div className="relative overflow-hidden" style={{ background: 'rgba(255,255,255,0.08)', borderTop: '1px solid rgba(255,255,255,0.12)' }}>
                 <div className="flex">
                     <div className="animate-marquee py-2.5 whitespace-nowrap text-white/70 text-xs sm:text-sm tracking-wide">
                         {[
@@ -165,7 +167,7 @@ function Hero() {
                         ))}
                     </div>
                 </div>
-            </div>
+            </div> */}
         </section>
     );
 }
