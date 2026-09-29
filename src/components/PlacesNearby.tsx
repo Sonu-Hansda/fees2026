@@ -16,7 +16,7 @@ function PlacesNearby() {
             title: "Sir Dorabji Tata Park",
             distance: "6 km from NIT Jamshedpur",
             description: "A peaceful retreat featuring manicured lawns, illuminated fountains, a statue of Sir Dorabji Tata, and a vibrant annual December flower show.",
-            image: "/dorabji.webp",
+            image: "/dorabji.jpg",
         },
         {
             title: "Dalma Wildlife Sanctuary",
@@ -56,11 +56,11 @@ function PlacesNearby() {
                     {places.map((place, i) => (
                         <div key={i} className="conf-card overflow-hidden flex flex-col justify-between">
                             <div>
-                                <div className="relative h-72 sm:h-80 w-full overflow-hidden">
+                                <div className="relative h-65 sm:h-63 w-full overflow-hidden">
                                     <img 
                                         src={place.image} 
                                         alt={place.title}
-                                        className="w-full h-full transition-transform duration-300 hover:scale-105"
+                                        className="w-full h-full hover:scale-105"
                                     />
                                 </div>
                                 <div className="p-5">

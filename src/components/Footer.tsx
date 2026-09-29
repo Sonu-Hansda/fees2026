@@ -106,9 +106,9 @@ function Footer() {
                         </div> */}
 
                         <div>
-                            <div className="text-white/60 text-[10px] uppercase">Technical team</div>
+                            {/* <div className="text-white/60 text-[10px] uppercase">Technical team</div>
                                 <div className="text-white/40 text-[14px]"><p>Sonu Hansdah</p>
-                                <p>Sejal Dutta</p></div>
+                                <p>Sejal Dutta</p></div> */}
                                 </div>
                     </div>
                 </div>
@@ -116,7 +116,7 @@ function Footer() {
                 {/* Bottom bar */}
                 <div className="border-t mt-10 pt-6 flex flex-col md:flex-row items-center justify-between gap-2 text-white/30 text-xs"
                     style={{ borderColor: 'rgba(255,255,255,0.10)' }}>
-                    <p>&copy; 2027 FEES-2027. All rights reserved.</p>
+                    <p>&copy; 2027 FEES-2027. Website designed, developed, and maintained by Sonu Hansda and Sejal Dutta. All rights reserved. </p>
                     <p>
                         Organized by{' '}
                         <a href="https://www.nitjsr.ac.in" target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-white transition-colors">
