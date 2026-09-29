@@ -82,7 +82,7 @@ function Committee() {
                                 className="font-semibold text-sm mb-1"
                                 style={{ color: 'var(--color-primary)' }}
                             >
-                                Technical Program Chair
+                                General Chair &amp; Convener
                             </div>
                             <div className="text-xs mb-0.5" style={{ color: 'var(--color-text-mid)' }}>
                                 Dept. of Electrical Engineering, NIT Jamshedpur
@@ -110,18 +110,18 @@ function Committee() {
                             >
                                 Dr. Dulari Hansdah
                             </div>
-                            <div
+                            {/* <div
                                 className="font-semibold text-sm mb-1"
                                 style={{ color: 'var(--color-primary)' }}
                             >
                                 General Chair &amp; Convener
-                            </div>
-                            <div className="text-xs mb-0.5" style={{ color: 'var(--color-text-mid)' }}>
+                            </div> */}
+                            <div className="text-xs mb-3" style={{ color: 'var(--color-text-mid)' }}>
                                 Dept. of Mechanical Engineering, NIT Jamshedpur
                             </div>
-                            <div className="text-xs mb-3" style={{ color: 'var(--color-text-light)' }}>
+                            {/* <div className="text-xs mb-3" style={{ color: 'var(--color-text-light)' }}>
                                 IEEE Member ID: 101369258
-                            </div>
+                            </div> */}
                             <div className="flex flex-wrap gap-2">
                                 <a
                                     href="mailto:dhansdah.me@nitjsr.ac.in"
@@ -134,7 +134,7 @@ function Committee() {
                                 >
                                     dhansdah.me@nitjsr.ac.in
                                 </a>
-                                <a
+                                {/* <a
                                     href="https://www.nitjsr.ac.in/people/profile/ME105"
                                     target="_blank"
                                     rel="noopener noreferrer"
@@ -146,8 +146,8 @@ function Committee() {
                                     }}
                                 >
                                     Institute Profile
-                                </a>
-                                <a
+                                </a> */}
+                                {/* <a
                                     href="https://scholar.google.co.in/citations?user=0Sf_mnwAAAAJ&hl=en"
                                     target="_blank"
                                     rel="noopener noreferrer"
@@ -159,7 +159,7 @@ function Committee() {
                                     }}
                                 >
                                     Google Scholar
-                                </a>
+                                </a> */}
                             </div>
                         </div>
 
