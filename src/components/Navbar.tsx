@@ -45,6 +45,13 @@ function Navbar() {
 
     return (
         <>
+        {/* Announcement bar */}
+            <div style={{ background: 'var(--color-primary)' }} className="text-white text-center py-2 px-4 text-xs font-medium tracking-wide">
+                <span className="hidden md:inline">
+                    FEES-2027 — International Conference on Frontiers in Energy Engineering and Sustainability &nbsp;|&nbsp; August 5-7 2027 &nbsp;|&nbsp; NIT Jamshedpur, India &nbsp;|&nbsp; Hybrid Mode
+                </span>
+                <span className="md:hidden">FEES-2027 &nbsp;|&nbsp; August 5-7, 2027 &nbsp;|&nbsp; NIT Jamshedpur</span>
+            </div>
             {/* Main nav */}
             <nav
                 className={`sticky top-0 z-50 bg-white border-b transition-shadow duration-200 ${isScrolled ? 'shadow-md' : ''}`}

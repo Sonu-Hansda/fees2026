@@ -28,7 +28,7 @@ function PlacesNearby() {
             title: "Bhuvaneshwari Temple",
             distance: "12 km from NIT Jamshedpur",
             description: "Perched 500 feet high on Bhuvaneshwari Hill. Dedicated to Goddess Bhuvaneshwari, it showcases South Indian architecture and offers panoramic city views.",
-            image: "/bhuvaneshwari.webp",
+            image: "/bhuvaneshwari.jpeg",
         },
         {
             title: "Dimna Lake",
@@ -56,11 +56,11 @@ function PlacesNearby() {
                     {places.map((place, i) => (
                         <div key={i} className="conf-card overflow-hidden flex flex-col justify-between">
                             <div>
-                                <div className="relative h-65 sm:h-63 w-full overflow-hidden">
+                                <div className="relative h-72 sm:h-72 w-full overflow-hidden">
                                     <img 
                                         src={place.image} 
                                         alt={place.title}
-                                        className="w-full h-full hover:scale-105"
+                                        className="w-full h-full object-cover hover:scale-105"
                                     />
                                 </div>
                                 <div className="p-5">

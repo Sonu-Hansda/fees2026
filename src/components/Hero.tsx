@@ -20,8 +20,7 @@ function Countdown() {
     }, []);
 
     return (
-        <div className="flex gap-3 sm:gap-4 justify-center">
-            {([['Days', t.days], ['Hours', t.hours], ['Min', t.minutes], ['Sec', t.seconds]] as [string, number][]).map(([label, val]) => (
+<div className="flex flex-wrap gap-3 sm:gap-4 justify-center">            {([['Days', t.days], ['Hours', t.hours], ['Min', t.minutes], ['Sec', t.seconds]] as [string, number][]).map(([label, val]) => (
                 <div key={label} className="text-center">
                     <div
   className="
