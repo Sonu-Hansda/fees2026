@@ -10,7 +10,7 @@ function AboutConference() {
                     <div>
                         <h2 className="section-title">About the Conference</h2>
                         <span className="section-rule"></span>
-                        <div className="space-y-4 text-sm md:text-base leading-relaxed" style={{ color: 'var(--color-text)' }}>
+                        <div className="space-y-4 text-sm md:text-base leading-relaxed text-justify" style={{ color: 'var(--color-text)' }}>
                             <p>
                                 The International Conference on Frontiers in Energy Engineering and
                                 Sustainability (FEES-2027) brings together leading researchers, industry
@@ -83,7 +83,7 @@ function AboutConference() {
                                 Conference Days
                             </div>
                             <div className="text-xs mt-1" style={{ color: 'var(--color-text-light)' }}>
-                                April 1–3, 2027
+                                August 5-7, 2027
                             </div>
                         </div>
                     </div>

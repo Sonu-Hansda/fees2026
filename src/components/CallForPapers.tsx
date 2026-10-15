@@ -26,9 +26,7 @@ function CallForPapers() {
                     <p style={{ color: 'var(--color-text-mid)' }} className="text-sm sm:text-base leading-relaxed mb-4">
                         FEES-2027 invites original, unpublished full-length papers from academia and industry.
                         Papers must be written in English and formatted according to the IEEE conference template.
-                         Accepted papers submitted for inclusion in the {' '}
-                        <strong style={{ color: 'var(--color-text)' }}>IEEE Xplore Digital Library</strong>.
-                        {/* Selected papers will be invited for publication in high-impact SCI-indexed journals. */}
+                        Accepted papers submitted for possible inclusion in <strong style={{ color: 'var(--color-text)' }}>IEEE Xplore Digital Library</strong>, subject to meeting IEEE's scope and quality requirements
                     </p>
                     <p style={{ color: 'var(--color-text-mid)' }} className="text-sm sm:text-base leading-relaxed">
                         The paper submission and review process will be managed via{' '}
@@ -71,8 +69,8 @@ function CallForPapers() {
                         </h3>
                         <ul className="space-y-3 text-sm" style={{ color: 'var(--color-text-mid)' }}>
                             <li className="flex items-start gap-2">
-                                <span className="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: 'var(--color-primary)' }}></span>
-                                 Accepted papers submitted for inclusion in the <strong style={{ color: 'var(--color-text)' }}>IEEE Xplore Digital Library</strong>.
+                                <span className="mt-1.5 w-1.5 h-1.5 rounded-full shrink-0" style={{ background: 'var(--color-primary)' }}></span>
+                                Accepted papers submitted for possible inclusion in IEEE Xplore Digital Library, subject to meeting IEEE's scope and quality requirements
                             </li>
                             {/* <li className="flex items-start gap-2">
                                 <span className="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: 'var(--color-primary)' }}></span>
@@ -83,18 +81,18 @@ function CallForPapers() {
                                 Selected high-quality papers will be invited for extended versions in <strong style={{ color: 'var(--color-text)' }}>high-impact SCI-indexed journals</strong>.
                             </li> */}
                             <li className="flex items-start gap-2">
-                                <span className="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: 'var(--color-primary)' }}></span>
+                                <span className="mt-1.5 w-1.5 h-1.5 rounded-full shrink-0" style={{ background: 'var(--color-primary)' }}></span>
                                 IEEE holds copyright for all published papers. Authors must submit the IEEE copyright transfer form after acceptance.
                             </li>
                             <li className="flex items-start gap-2">
-                                <span className="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: 'var(--color-primary)' }}></span>
+                                <span className="mt-1.5 w-1.5 h-1.5 rounded-full shrink-0" style={{ background: 'var(--color-primary)' }}></span>
                                 Post-acceptance modifications are limited to formatting and minor clarity edits only.
                             </li>
                         </ul>
 
                         <div className="mt-6 pt-4" style={{ borderTop: '1px solid var(--color-border)' }}>
                             <p className="text-xs mb-3" style={{ color: 'var(--color-text-mid)' }}>
-                                <strong style={{ color: 'var(--color-text)' }}>Paper Submission Deadline:</strong> July 20, 2027
+                                <strong style={{ color: 'var(--color-text)' }}>Paper Submission Deadline:</strong> April 30, 2027
                             </p>
                              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6">
                                <a

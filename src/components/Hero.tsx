@@ -206,10 +206,6 @@ inline-flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm sm:text-base font-s
                         Submit Paper
                     </a>
                 </div>
-
-                <p className="text-green-100/70 text-sm font-medium">
-                    Accepted papers submitted for inclusion in IEEE Xplore Digital Library
-                </p>
             </div>
 
             {/* Marquee */}
