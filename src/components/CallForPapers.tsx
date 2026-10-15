@@ -26,7 +26,7 @@ function CallForPapers() {
                     <p style={{ color: 'var(--color-text-mid)' }} className="text-sm sm:text-base leading-relaxed mb-4">
                         FEES-2027 invites original, unpublished full-length papers from academia and industry.
                         Papers must be written in English and formatted according to the IEEE conference template.
-                        All accepted and presented papers will be submitted for inclusion in the{' '}
+                         Accepted papers submitted for inclusion in the {' '}
                         <strong style={{ color: 'var(--color-text)' }}>IEEE Xplore Digital Library</strong>.
                         {/* Selected papers will be invited for publication in high-impact SCI-indexed journals. */}
                     </p>
