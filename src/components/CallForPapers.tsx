@@ -28,7 +28,7 @@ function CallForPapers() {
                         Papers must be written in English and formatted according to the IEEE conference template.
                         All accepted and presented papers will be submitted for inclusion in the{' '}
                         <strong style={{ color: 'var(--color-text)' }}>IEEE Xplore Digital Library</strong>.
-                        Selected papers will be invited for publication in high-impact SCI-indexed journals.
+                        {/* Selected papers will be invited for publication in high-impact SCI-indexed journals. */}
                     </p>
                     <p style={{ color: 'var(--color-text-mid)' }} className="text-sm sm:text-base leading-relaxed">
                         The paper submission and review process will be managed via{' '}
@@ -74,10 +74,10 @@ function CallForPapers() {
                                 <span className="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: 'var(--color-primary)' }}></span>
                                 All accepted and presented papers will be submitted for inclusion in the <strong style={{ color: 'var(--color-text)' }}>IEEE Xplore Digital Library</strong>.
                             </li>
-                            <li className="flex items-start gap-2">
+                            {/* <li className="flex items-start gap-2">
                                 <span className="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: 'var(--color-primary)' }}></span>
                                 Selected high-quality papers will be invited for extended versions in <strong style={{ color: 'var(--color-text)' }}>high-impact SCI-indexed journals</strong>.
-                            </li>
+                            </li> */}
                             <li className="flex items-start gap-2">
                                 <span className="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: 'var(--color-primary)' }}></span>
                                 IEEE holds copyright for all published papers. Authors must submit the IEEE copyright transfer form after acceptance.
@@ -92,14 +92,32 @@ function CallForPapers() {
                             <p className="text-xs mb-3" style={{ color: 'var(--color-text-mid)' }}>
                                 <strong style={{ color: 'var(--color-text)' }}>Paper Submission Deadline:</strong> December 31, 2026
                             </p>
-                            <a
+                             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6">
+                               <a
+    href="#registration"
+    onClick={(e) => {
+        e.preventDefault();
+        document.querySelector('#registration')?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+        });
+    }}
+    className="btn-primary text-sm sm:text-base px-8 py-3"
+>
+    Register Now
+</a>
+
+ <a
                                 href="https://cmt3.research.microsoft.com/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="btn-primary text-sm"
                             >
-                                Submit via Microsoft CMT
+                                Submit
                             </a>
+
+                             </div>
+                           
                         </div>
                     </div>
                 </div>
