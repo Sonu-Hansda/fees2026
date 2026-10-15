@@ -90,7 +90,7 @@ function CallForPapers() {
 
                         <div className="mt-6 pt-4" style={{ borderTop: '1px solid var(--color-border)' }}>
                             <p className="text-xs mb-3" style={{ color: 'var(--color-text-mid)' }}>
-                                <strong style={{ color: 'var(--color-text)' }}>Paper Submission Deadline:</strong> December 31, 2026
+                                <strong style={{ color: 'var(--color-text)' }}>Paper Submission Deadline:</strong> July 20, 2027
                             </p>
                              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6">
                                <a
