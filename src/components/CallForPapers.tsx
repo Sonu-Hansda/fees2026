@@ -72,8 +72,12 @@ function CallForPapers() {
                         <ul className="space-y-3 text-sm" style={{ color: 'var(--color-text-mid)' }}>
                             <li className="flex items-start gap-2">
                                 <span className="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: 'var(--color-primary)' }}></span>
-                                All accepted and presented papers will be submitted for inclusion in the <strong style={{ color: 'var(--color-text)' }}>IEEE Xplore Digital Library</strong>.
+                                 Accepted papers submitted for inclusion in the <strong style={{ color: 'var(--color-text)' }}>IEEE Xplore Digital Library</strong>.
                             </li>
+                            {/* <li className="flex items-start gap-2">
+                                <span className="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: 'var(--color-primary)' }}></span>
+                                All accepted and presented papers will be submitted for inclusion in the <strong style={{ color: 'var(--color-text)' }}>IEEE Xplore Digital Library</strong>.
+                            </li> */}
                             {/* <li className="flex items-start gap-2">
                                 <span className="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: 'var(--color-primary)' }}></span>
                                 Selected high-quality papers will be invited for extended versions in <strong style={{ color: 'var(--color-text)' }}>high-impact SCI-indexed journals</strong>.
